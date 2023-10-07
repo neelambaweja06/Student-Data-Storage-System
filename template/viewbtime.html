@@ -1,0 +1,31 @@
+{% include "header.html" %}
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="viewbt">
+<form method="POST">
+{% csrf_token %}
+    <h2 style="text-align:center;">View By Batch Time</h2><br>
+	<select class="form-control" name="btime">
+		<option>-----Select Batch Time------</option>
+		<option>09AM - 10AM</option>
+		<option>10AM - 11AM</option>
+		<option>11AM - 12AM</option>
+		<option>12AM - 01PM</option>
+		<option>02PM - 03PM</option>
+		<option>03PM - 04PM</option>
+		<option>04PM - 05PM</option>
+		<option>05PM - 06PM</option>
+		<option>06PM - 07PM</option>
+		<option>07PM - 08PM</option>
+	</select><br>
+	<div class="d-grid gap-2 col-6 mx-auto">
+	<button class="btn btn-info" type="submit">Submit</button>
+	</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+{% include "footer.html" %}

@@ -1,0 +1,96 @@
+{% include "header.html" %}
+<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+            <div class="back">
+			<h2>Registration</h2>
+			<form method="POST">
+				{% csrf_token %}
+				<div class="mb-3">
+					<label>Name</label>
+					<input type="text" name="name" class="form-control"  placeholder="Enter Your Name">
+				</div>
+				<div class="mb-3">
+					<label>Father's Name</label>
+					<input type="text" name="fname" class="form-control"  placeholder="Enter Your Father's Name">
+				</div>
+				<div class="mb-3">
+					<label>Mother's Name</label>
+					<input type="text" name="mname" class="form-control"  placeholder="Enter Your Mother's Name">
+				</div>
+				<div class="mb-3">
+					<label>Phone Number</label>
+					<input type="number" name="phone" class="form-control"  placeholder="Enter Your Phone Number">
+				</div>
+				<div class="mb-3">
+					<label>Address</label>
+					<textarea class="form-control" name="address" placeholder="Enter Your Address"></textarea>
+				</div>
+				<div class="mb-3">
+					<label>City</label>
+					<select class="form-control" name="city">
+					<option>-----Select Your City------</option>
+					<option>Delhi</option>
+					<option>UP</option>
+				</select>
+				</div>
+				<div class="mb-3">
+					<label>Gender</label><br>
+					<div class="form-check form-check-inline" style="margin-left:12px;">
+					<input class="form-check-input" type="radio" name="gender" value="Male"/>Male
+					</div>
+					<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio"  name="gender" value="Female"/>Female
+					</div>
+					<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio"  name="gender" value="Other"/>Other
+					</div>
+				</div>
+				<div class="mb-3">
+					<label>Course</label>
+					<select class="form-control" name="course">
+					<option>-----Select Your Course------</option>
+					<option>Java</option>
+					<option>Python</option>
+					<option>Software Testing</option>
+					<option>Web Designing</option>
+					<option>Programming Languages</option>
+					<option>Cloud Computing</option>
+					<option>Mobile Application Development</option>
+					<option>Degital Marketing</option>
+					<option>Network & Security</option>
+					<option>CAD Training</option>
+				</select>
+				</div>
+				<div class="mb-3">
+					<label>Batch Time</label>
+					<select class="form-control" name="btime">
+					<option>-----Select Batch Time------</option>
+					<option>09AM - 10AM</option>
+					<option>10AM - 11AM</option>
+					<option>11AM - 12AM</option>
+					<option>12AM - 01PM</option>
+					<option>02PM - 03PM</option>
+					<option>03PM - 04PM</option>
+					<option>04PM - 05PM</option>
+					<option>05PM - 06PM</option>
+					<option>06PM - 07PM</option>
+					<option>07PM - 08PM</option>
+				</select>
+				</div>
+				<div class="mb-3">
+					<label>Select Photo</label>
+					<div class="mb-3">
+					<input class="form-control" name="photo" type="file" id="formFile"><br>
+					</div>
+				</div>
+				<div class="d-grid gap-2 col-6 mx-auto">
+				<button class="btn btn-info" type="submit">Submit</button>
+				</div>
+			</form>
+			</div>
+            </div>						
+		</div>
+	</div>
+{% include "footer.html" %}
+

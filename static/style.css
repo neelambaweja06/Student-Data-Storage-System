@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+    height: 7%;
+    width: auto;
+    background-color: black;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+.list{
+    line-height: 2.5;
+    color: white;
+}
+.list a{
+    text-decoration: none;
+    color: white;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 70px;
+    font-size: 17px;
+}
+.list a:hover{
+    color: rgba(0,0,0,0.8);
+    background-color: white;
+    display: block;
+    padding: 0px 10px;
+    transition-duration: 0.8s;
+    border-radius: 5px;
+}
+
+.mid{
+    width:auto ;
+    height: 86%;
+}
+.mid1{
+    margin-top: 4%;
+}
+.bg-image{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url(/static/images/image1.png) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+}
+.mid1 p{
+    text-align: center;
+    font-size: 15px;
+    text-align: justify;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.note{
+    float: left;
+    color: white;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.end{
+    color: white;
+    margin-left: 18%;
+    line-height: 2.5;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    font-size: 14px;
+}
+.icon1{
+    margin-right: 18%;
+    line-height: 2;
+}
+.icon{
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+/* for registration page */
+
+.back{
+    background-color: rgba(0,0,0,0.9);
+    padding: 2% 10%;
+    margin: 4% 10%;
+    color: white;
+    
+}
+.back h2{
+    text-align: center;
+}
+
+/* for view page */
+
+.back1{
+    background-color: rgba(0,0,0,0.9);
+    padding: 5% 10%;
+    margin: 9% 12%;
+    color: white;
+}
+.viewlst{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+    /* for view all data*/
+
+.viewall{
+    border: 2px solid black;
+    padding: 3% 5%;
+    margin: 5% 8%;
+}
+
+    /* for view batch time */
+
+.viewbt{
+    border: 2px solid black;
+    padding: 3% 5%;
+    margin: 8% 15%;
+}
